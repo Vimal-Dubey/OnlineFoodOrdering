@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navbar */
+#navbar{
+    position: relative;
+    top: 0px;
+    display: flex;
+    align-items: center;
+}
+#logo{
+    margin: 21px 4px;
+}
+#logo img{
+    height: 61px;
+    margin: 10px 28px;
+    border-radius: 35px;
+   
+}
+#navbar ul{
+    display: flex;
+  
+}
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar ul li{
+    list-style: none;
+
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family:cursive;
+
+}
+#navbar ul li a:hover{
+    color: rgb(11, 11, 11);
+    background-color: white;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 133px;
+    height: 519px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: " ";
+    background: url(sectionimage.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+#home h1{
+    color: yellow;
+    text-align: center;
+    font-family:cursive;
+}
+#home p{
+    color: rgb(252, 252, 250);
+    text-align: center;
+    font-size: 1.2rem;
+    font-family:cursive;
+}
+
+/* services section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: #f9f6f6;
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family:cursive;
+}
+/* client section */
+#client-section{
+   
+    position: relative;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+  /*  position: relative; */
+    padding: 35px;
+}
+.client-item::before{
+    content: "";
+    position: absolute;
+ /*   background: url(clientlogo.jpg) no-repeat center center/cover; 
+
+    width: 100%;
+    height: 100%;
+    
+    z-index: -1;
+    opacity: 0.4;
+*/
+}
+.client-item img{
+    height: 100px;
+}
+/* contact section */
+#contact{
+    position:relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(contactbg.jpg) no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    color: rgb(37, 37, 33);
+    font-size: large;
+    font-family:cursive;   
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 7px;
+}
+
+/* footer */
+footer{
+    background: #494903;
+    color: #f9f6f6;
+    padding: 9px 20px;
+}
+.h-primary{
+    font-family:cursive;
+    font-size: 3rem;
+    margin-top: 20px;
+    padding: 12px;
+}
+.h-secondary{
+    font-family:cursive;
+    font-size: 1.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 3px 20px;
+    background-color: #494903;
+    border: 2px solid red;
+    color: aliceblue;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family:cursive;
+}
+.btn:hover{
+    background-color: rgb(107, 105, 58);
+}
+.center{
+    text-align: center;
+}

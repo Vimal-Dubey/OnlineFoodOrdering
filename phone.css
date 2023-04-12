@@ -1,0 +1,15 @@
+#navbar{
+    flex-direction: column;
+}
+#home{
+    padding: 3px 100px;
+}
+#services{
+    flex-direction: column;
+}
+.h-primary{
+    font-size: 24px;
+}
+#clients{
+    flex-wrap: wrap;
+}
